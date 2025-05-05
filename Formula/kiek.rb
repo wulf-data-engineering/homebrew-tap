@@ -1,14 +1,14 @@
 class Kiek < Formula
-  version '1.2.0'
+  version '1.4.0'
   desc "kiek helps you to look into Kafka topics."
   homepage "https://github.com/wulf-data-engineering/kiek"
 
   if OS.mac?
       url "https://github.com/wulf-data-engineering/kiek/releases/download/v#{version}/kiek-aarch64-apple-darwin.tar.gz"
-      sha256 "2ff8042f0be26ea9c14ae2e9f013167fd8c7378a6d91431622b7dc09b43fdc5e"
+      sha256 "7662f3114e9d3c2dc0adad2319b029ad7e1e2aff0709154bb155d4c7bbbeef74"
   elsif OS.linux?
       url "https://github.com/wulf-data-engineering/kiek/releases/download/v#{version}/kiek-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0d9e543db994c3ef4c0b2bf5b56c41866d49a11033e56af33b7247056afbea48"
+      sha256 "7636898bf03ddb6fb4b46bc5edcb72c5edc20547c45d94be9a1c64987067ca13"
   end
 
   conflicts_with "kiek"
